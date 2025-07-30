@@ -1,3 +1,21 @@
+// Habilitando o modo estrito
+'use strict';
+
+let teste = "senac";
+console.log(teste);
+
+let etc = "etc e tal"
+console.log(etc);
+
+// teste = "senac";
+// console.log(teste);
+
+// let interface = "etc e tal"
+// console.log(interface);
+
+
+
+
 /* Exercícios */
 
 // 1) Crie uma variável chamada "uc" e coloque nela o número da UC que estamos
@@ -8,7 +26,7 @@
 // 3) Monte e mostre uma frase no console exibindo a UC e a competência. Exemplo: Estamos na UC2 estudando Front-end e JavaScript
 
 let uc = 2
-let competencia = ("construir aplicações Front-end")
+let competencia = ("construir aplicações Front-end");
 
 console.log(`No curso de Desenvolvedor Full-stack, no Senac, estamos na UC ${uc}, aprendendo a ${competencia}.`);
 
