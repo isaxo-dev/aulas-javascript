@@ -26,6 +26,21 @@ console.log(coisas[4]);
 
 // 2) Em seguida, mostre no console uma frase personalizada indicando o segundo, o quinto e o sétimo elemento do array. Use concatenação e/ou template string.
 
-const coisas_que_gosto = ["videogame", "Bistecone", "Música 'Blue', do Young Kai", "skate", "futebol", "dormir", "Fifa"]
+const coisas_que_gosto = ["videogame", "Bistecone", "Música 'Blue', do Young Kai", "skate", "futebol", "dormir", "Fifa"];
 
 console.log(`Normalmente curto assistir Lives do streamer ${coisas_que_gosto[1]} nas noites, porém, quando tem algum jogo de ${coisas_que_gosto[4]} passando no mesmo horário, aí não tem jeito, tenho que assistir... falando nisso, de vez em quando támbem gosto de passar uma raivinha jogando um ${coisas_que_gosto[6]} (kkkk)`);
+
+/* Array como MATRIZ DE 2 DIMENSÕES */
+const tecnologias = [
+    ["HTML", "CSS", "JAVASCRIPT"],
+    ["Figma", "Photoshop"],
+    ["PHP", "Node.js", "SQL", "Express"]
+];
+
+// 
+console.log(tecnologias[0][2]); // JAVASCRIPT
+console.log(tecnologias[1][0]); // Figma
+console.log(tecnologias[2][3]); //Express
+
+
+
