@@ -35,6 +35,30 @@ console.log(livro.titulo);
 /* Para acessar algum dos volumes, primeiro passamos pela propriedade (volumes) usando 'ponto' e, chegando nela, usamos os 'colchetes' com índice pois se trata de um array. */
 console.log(`Meu livro preferido é ${livro.volumes[1]}`);
 
+// Exemplo 3: array de objetos
+console.log("\nExemplo 3\n");
+const livros = [
+    {
+        titulo: "O assassinato no Expresso do Oriente",
+        autor: "Christie"
+    },
+    {
+        titulo: "Crepúsculo",
+        autor: "Stephanie Myers"
+    },
+    {
+        titulo: "Um livro qualquer",
+        autor: "Fulano de tal"
+    }
+];
+
+console.log(livros);
+
+console.log(livros[2].titulo);
+
+
+
+
 
 
 
