@@ -73,3 +73,13 @@ if(media > 9){
 } else {
     console.log("Péssimo.");
 }
+
+
+console.log("\nExemplo 4\n");
+
+/* Condicional COMPOSTA 
+com operador TERNÁRIO       ?:           */
+
+let situacao = idade >= 18 ? "Maior" : "menor";
+console.log(situacao);
+ 
