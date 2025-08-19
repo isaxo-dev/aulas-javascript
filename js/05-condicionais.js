@@ -43,12 +43,33 @@ DICA: você deve SOMAR as duas notas e DEPOIS dividir por 2.
 Caso contrário, mostre "reprovado".
 */
 
-const nota1 = 6;
+const nota1 = 8;
 const nota2 = 8;
 let media = (nota1 + nota2)/2
 
-if (media >= 6) {
+if (media >= 7) {
     console.log(`Parabéns, você foi aprovado! \nSua média foi ${media}`);
 } else{
     console.log(`Você foi reprovado. \nSua média foi ${media}`);
+}
+
+console.log("\nExemplo 3\n");
+
+// Condicional ENCADEADA/SUCESSIVA
+
+/* Verificando o desempenho do aluno conforme a média:  
+- Média acima de 9? Ótimo
+- Média acima de 7? bom
+- Média acima de 5? ruim
+- Média até 5? péssimo
+*/
+
+if(media > 9){
+    console.log("Ótimo!");
+} else if(media > 7){
+    console.log("Bom!");
+} else if(media > 5){
+    console.log("Ruim.");
+} else {
+    console.log("Péssimo.");
 }
