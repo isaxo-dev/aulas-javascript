@@ -76,7 +76,7 @@ const aluno = {
     nomeCompleto: "Isaac Rodrigues Simões",
     dataDeNascimento: "28/06/2009",
     listaDeTelefones: [
-        "(11) 2233-4455",
+        "11-2233-4455",
         "(11)95203-9704"
     ],
     endereco: {
