@@ -12,7 +12,7 @@ Vantagens ao usar funções:
 No JavaScript, existem várias maneiras de se criar uma função: função anônima, nomeada/declarada e arrow function.*/
 
 console.log("Exemplo 1: Função Anônima");
-const exemplo1 = function(){
+const exemplo1 = function () {
     // corpo da função: ação que a função vai fazer
     console.log("Olá Função Anônima!");
 };
@@ -21,8 +21,8 @@ const exemplo1 = function(){
 exemplo1();
 
 console.log("\nExemplo 2: Função nomeada/declarada");
-function exemplo2(){
-    console.log("Olá função nomeada!");    
+function exemplo2() {
+    console.log("Olá função nomeada!");
 }
 
 exemplo2();
@@ -44,8 +44,8 @@ Quando uma função precisa de valores/dados para algum tipo de processamento, e
 Geralmente, ao terminar o processamento dos dados, a função "retorna" para fora um resultado*/
 
 console.log("\nExemplo 4: Função com parâmetro opcional");
-function saudacao( nome = "Visitante" ){
-    console.log("Olá, "+nome);
+function saudacao(nome = "Visitante") {
+    console.log("Olá, " + nome);
 }
 
 saudacao("Isaac");
@@ -54,7 +54,7 @@ saudacao(); // Nesse caso, é usado "Visitante" como valor
 console.log("\nExemplo 5: função com parâmetros e retorno");
 
 /* Sempre que tivermos a necessidade de trabalhar com o resultado do processamento de uma função, então essa função deve ter o return. */
-function multiplicar(valor1, valor2){
+function multiplicar(valor1, valor2) {
     return valor1 * valor2
 }
 
@@ -63,8 +63,8 @@ let resultado1 = multiplicar(10, 5);
 let resultado2 = multiplicar(200, 10);
 
 // Exibimos o resultado
-console.log("Resultado 1: "+resultado1);
-console.log("Resultado 2: "+resultado2);
+console.log("Resultado 1: " + resultado1);
+console.log("Resultado 2: " + resultado2);
 
 console.log("\nExemplo 6: Simplificando com Arrow Function");
 
@@ -76,10 +76,34 @@ console.log("\nExemplo 6: Simplificando com Arrow Function");
 // Versão 2: Sintaxe Arrow Function com retorno implícito
 const somar = (valor1, valor2) => valor1 + valor2;
 
-console.log( somar(150, 500) );
+console.log(somar(150, 500));
 
 
 console.log("\nExemplo 7: Formatando valor monetário");
+let preco = 5000;
+let desconto = preco * 0.10; // 10%
+let precoFinal = preco - desconto;
+
+function formatarMoeda(valor) {
+    return new Intl.NumberFormat("pt-br", {
+        style: "currency",
+        currency: "BRL"
+    }).format(valor)
+}
+
+console.log("Preço original: " + formatarMoeda(preco));
+console.log("Desconto: " + formatarMoeda(desconto));
+console.log("Preço final: " + formatarMoeda(precoFinal));
+
+// Exemplo: usando recursos da classe Intl (internacionalização)
+const exemplo = new Intl.NumberFormat("pt-br", {
+    style: "currency",
+    currency: "BRL"
+}).format(preco);
+
+console.log(exemplo);
+
+
 
 
 
