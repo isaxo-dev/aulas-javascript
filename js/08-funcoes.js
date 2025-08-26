@@ -53,15 +53,37 @@ saudacao(); // Nesse caso, é usado "Visitante" como valor
 
 console.log("\nExemplo 5: função com parâmetros e retorno");
 
+/* Sempre que tivermos a necessidade de trabalhar com o resultado do processamento de uma função, então essa função deve ter o return. */
 function multiplicar(valor1, valor2){
     return valor1 * valor2
 }
 
+// Chamamos a função e recebemos o retornp/resultado dela
 let resultado1 = multiplicar(10, 5);
 let resultado2 = multiplicar(200, 10);
 
-console.log("Resultado 1: "+resultado1)
-console.log("Resultado 2: "+resultado2)
+// Exibimos o resultado
+console.log("Resultado 1: "+resultado1);
+console.log("Resultado 2: "+resultado2);
+
+console.log("\nExemplo 6: Simplificando com Arrow Function");
+
+// Versão 1: Sintaxe declarada/nomeada
+// function somar(valor1, valor2){
+//     return valor1 + valor2;
+// }
+
+// Versão 2: Sintaxe Arrow Function com retorno implícito
+const somar = (valor1, valor2) => valor1 + valor2;
+
+console.log( somar(150, 500) );
+
+
+console.log("\nExemplo 7: Formatando valor monetário");
+
+
+
+
 
 
 
