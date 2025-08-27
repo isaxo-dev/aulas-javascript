@@ -15,9 +15,15 @@ console.log(pagina);
 // Ao clicar 1x, adiciona um texto ao paragrafo de mensagem
 exemplo01.addEventListener("click", function(){
     mensagem01.textContent = "Evento aqui!"
+
+    // Adiciona a classe destaque
+    mensagem01.classList.add("destaque")
 });
 
 // Ao clicar 2x, retira o texto do paragrafo de mensagem
 mensagem01.addEventListener("dblclick", function(){
     mensagem01.textContent = "";
+
+    // Remove a classe destaque
+    mensagem01.classList.remove("destaque")
 });
