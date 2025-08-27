@@ -16,7 +16,7 @@ console.log(pagina);
 exemplo01.addEventListener("click", function(){
     mensagem01.textContent = "Evento aqui!"
 
-    // Adiciona a classe destaque
+    // Adiciona a classe destaque (não coloque ponto neste caso)
     mensagem01.classList.add("destaque")
 });
 
@@ -27,3 +27,28 @@ mensagem01.addEventListener("dblclick", function(){
     // Remove a classe destaque
     mensagem01.classList.remove("destaque")
 });
+
+/* Exercícios
+mouseover!!!!
+1) Crie uma constante nova e selecione o h1 da sua página
+
+2) Crie um evento em que, ao passar o mouse em cima do h1, o texto mude para "Praticando Eventos!" e faça o texto ficar centralizado.
+
+3) Faça também um evento de clique para que, quando clicar na palavra "Referências", o texto do h1 volte para a palavra "Eventos" e o alinhamento volte a ficar á esquerda (padrão). */
+
+const titulo_principal = document.querySelector("#titulo_principal")
+
+titulo_principal.addEventListener("mouseover", function(){
+    titulo_principal.textContent = "Praticando Eventos!"
+
+    titulo_principal.classList.add("titulo_principal")
+})
+
+
+const referencias = document.querySelector("#referencias")
+
+referencias.addEventListener("click", function(){
+    titulo_principal.textContent = "Eventos"
+
+    titulo_principal.classList.remove("titulo_principal")
+})
